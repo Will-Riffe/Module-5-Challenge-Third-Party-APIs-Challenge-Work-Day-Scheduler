@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css"/>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Planner</title>
-</head>
+    <title>Daily Planner</title>
+  </head>
 
-<body>
-  <!-- The header element that displays the current day -->
-  <header>
-    <h1>Today's Schedule</h1>
-    <h2 id="currentDay"></h2>
-  </header>
+  <body>
+    <!-- The header element that displays the current day -->
+    <header>
+      <h1>Today's Schedule</h1>
+      <h2 id="currentDay"></h2>
+    </header>
 
-  <!-- The main content section that contains time blocks -->
-  <main>
-    <!-- Time blocks for standard business hours -->
-    <div class="time-block">
-      <div class="hour">Time Block Input</div>
-      <textarea class="description"></textarea>
-      <button class="save-btn">Save</button>
-    </div>
+    <!-- The main content section that contains time blocks -->
+    <main>
 
-    <!-- More time blocks for the rest of the day -->
+      <table>
+          <!--Header to Time Table-->
+        <thead>
 
-  </main>
+          <tr>
+            <th>Hour Block</th>
+            <th>Save</th>
+          </tr>
 
-  <!-- Scripts for updating the current day and color-coding time blocks -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./script.js"></script>
-</body>
+        </thead>
 
+        <tbody class="time-block">
+          <!--Time Table loads here-->
+        </tbody>
+      </table>
+
+
+    </main>
+
+    <!-- Scripts for updating the current day and color-coding time blocks -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="./assets/main.js"></script>
+  </body>
 </html>
