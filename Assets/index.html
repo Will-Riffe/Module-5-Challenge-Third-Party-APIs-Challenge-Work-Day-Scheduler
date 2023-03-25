@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Planner</title>
+</head>
+
+<body>
+  <!-- The header element that displays the current day -->
+  <header>
+    <h1>Today's Schedule</h1>
+    <h2 id="currentDay"></h2>
+  </header>
+
+  <!-- The main content section that contains time blocks -->
+  <main>
+    <!-- Time blocks for standard business hours -->
+    <div class="time-block">
+      <div class="hour">Time Block Input</div>
+      <textarea class="description"></textarea>
+      <button class="save-btn">Save</button>
+    </div>
+
+    <!-- More time blocks for the rest of the day -->
+
+  </main>
+
+  <!-- Scripts for updating the current day and color-coding time blocks -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
