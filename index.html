@@ -7,6 +7,7 @@
     <title>Daily Scheduling</title>
     <link rel="stylesheet" href="./assets/css/foundation.css">
     <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
 
   <body class="grid-container">
@@ -22,7 +23,7 @@
     <!-- The main content section that contains time blocks -->
     <main>
 
-<table>
+<table class="unstriped">
 
   <thead>
     <tr>
@@ -34,86 +35,67 @@
   <tbody class="time-block">
 
     <form>
-      <tr>
-        <td><label id="hour6">6:00 AM</label></td>
-        <td><input type="text" name="block6" id="block6"></td>
-        <td><button type="submit" id="save6">Save</button></td>
-      </tr>
-      <tr>
-        <td><label for="hour7">7:00 AM</label></td>
-        <td><input type="text" name="block7" id="block7"></td>
-        <td><button type="submit" id="save7">Save</button></td>
-      </tr>
-      <tr>
-        <td><label id="hour8">8:00 AM</label></td>
+      <tr id="08">
+        <td><label>8:00 AM</label></td>
         <td><input type="text" name="block8" id="block8"></td>
-        <td><button type="submit" id="save8">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save8">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour9">9:00 AM</label></td>
+      <tr id="09">
+        <td><label>9:00 AM</label></td>
         <td><input type="text" name="block9" id="block9"></td>
-        <td><button type="submit" id="save9">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save9">Save</button></td>
       </tr>
-      <tr>
-        <td><label id="hour10">10:00 AM</label></td>
+      <tr id="10">
+        <td><label>10:00 AM</label></td>
         <td><input type="text" name="block10" id="block10"></td>
-        <td><button type="submit" id="save10">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save10">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour11">11:00 AM</label></td>
+      <tr id="11">
+        <td><label>11:00 AM</label></td>
         <td><input type="text" name="block11" id="block11"></td>
-        <td><button type="submit" id="save11">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save11">Save</button></td>
       </tr>
-      <tr>
-        <td><label id="hour12">12:00 PM</label></td>
+      <tr id="12">
+        <td><label>12:00 PM</label></td>
         <td><input type="text" name="block12" id="block12"></td>
-        <td><button type="submit" id="save12">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save12">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour1">1:00 PM</label></td>
+      <tr id="13">
+        <td><label>1:00 PM</label></td>
         <td><input type="text" name="block1" id="block1"></td>
-        <td><button type="submit" id="save1">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save1">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour2">2:00 PM</label></td>
+      <tr id="14">
+        <td><label>2:00 PM</label></td>
         <td><input type="text" name="block2" id="block2"></td>
-        <td><button type="submit" id="save2">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save2">Save</button></td>
       </tr>
-      <tr>
-        <td><label id="hour3">3:00 PM</label></td>
+      <tr id="15">
+        <td><label>3:00 PM</label></td>
         <td><input type="text" name="block3" id="block3"></td>
-        <td><button type="submit" id="save3">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save3">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour4">4:00 AM</label></td>
+      <tr id="16">
+        <td><label>4:00 AM</label></td>
         <td><input type="text" name="block4" id="block4"></td>
-        <td><button type="submit" id="save4">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save4">Save</button></td>
       </tr>
-      <tr>
-        <td><label id="hour5">5:00 PM</label></td>
+      <tr id="17">
+        <td><label>5:00 PM</label></td>
         <td><input type="text" name="block5" id="block5"></td>
-        <td><button type="submit" id="save5">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save5">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour6P">6:00 PM</label></td>
+      <tr id="18">
+        <td><label>6:00 PM</label></td>
         <td><input type="text" name="block6P" id="block6P"></td>
-        <td><button type="submit" id="save6P">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save6P">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour7P">7:00 PM</label></td>
+      <tr id="19">
+        <td><label>7:00 PM</label></td>
         <td><input type="text" name="block7P" id="block7P"></td>
-        <td><button type="submit" id="save7P">Save</button></td>
+        <td><button type="button" class="saveBtn" id="save7P">Save</button></td>
       </tr>
-      <tr>
-        <td><label for="hour8P">8:00 PM</label></td>
-        <td><input type="text" name="block8P" id="block8P"></td>
-        <td><button type="submit" id="save8P">Save</button></td>
-      </tr>
-      <tr>
-        <td><label for="hour9P">9:00 PM</label></td>
-        <td><input type="text" name="block9P" id="block9P"></td>
-        <td><button type="submit" id="save9P">Save</button></td>
-      </tr>
+
       
     </form>
   </tbody>

@@ -1,0 +1,17 @@
+.past {
+    background-color:brown;
+}
+
+.present {
+    background-color:yellow;
+}
+
+.future {
+    background-color: green;
+}
+
+.saveBtn {
+    background-color:green;
+    width:100%;
+    Padding:10px;
+}
