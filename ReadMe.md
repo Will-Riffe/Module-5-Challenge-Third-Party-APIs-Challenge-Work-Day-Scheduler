@@ -18,3 +18,4 @@ Because everyone is busy, we need a way to keep track of our daily activities. W
 ![Alt Screenshot of finished Webpage](./assets/images/screenshot.jpg)
 
 ## Link to active Webpage
+https://will-riffe.github.io/awsm-planner/
