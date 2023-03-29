@@ -11,7 +11,7 @@ Because everyone is busy, we need a way to keep track of our daily activities. W
 >
 >Form entry slots in each hour block for the purposes of entering a message or explanation of your plans.
 >
->A save button which currently saves to local storage, but still needs some work in order to be persistant.
+>When the user clicks the save button, their input is saved to local storage, and remains when the page is refreshed.
 
 ## Screenshots of Finished Webpage
 >Taken after 9PM
