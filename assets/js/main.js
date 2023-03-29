@@ -19,16 +19,18 @@ $(".time-block tr").each(function () {
 
 // Save the text for each event to local storage when the save button is clicked
 $(".saveBtn").on("click", function () {
-    var blockId = $(this).closest("tr").attr("id");
-    var blockText = $("#" + blockId + " input").val();
-  
-    localStorage.setItem(blockId, blockText);
-  });
-  
-  // Load any saved events from local storage and display them in the time blocks
-  $(document).ready(function () {
+  var blockId = $(this).closest("tr").attr("id");
+  var blockText = $("#" + blockId + " input").val();
+
+  localStorage.setItem(blockId, blockText);
+});
+
+// Load any saved events from local storage and display them in the time blocks
+$(document).ready(function () {
+  $("tr").each(function () {
+    var blockId = $(this).attr("id");
     var blockText = localStorage.getItem(blockId);
-      
-    $(this).closest("tr").children("input").val(blockText);
+
+    $(this).find("input").val(blockText);
   });
-  
+});
